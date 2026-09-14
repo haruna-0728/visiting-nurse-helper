@@ -85,31 +85,32 @@ Python学習(Pydantic / pytest / Streamlit)の集大成として、医療IT系�
 ---
 
 ## 4. Directory Structure(ディレクトリ構成)
+
+```
 visiting_nurse_helper_project/
 ├── README.md
 ├── requirements.txt
-├── docs/ … 設計書一式(下記5.参照)
+├── docs/                                  … 設計書一式(下記5.参照)
 └── visiting_nurse_helper/
-├── models.py … 中核データモデル(Symptom / RiskCondition / EscalationRule)とロジック(Pydantic)
-├── data.py … 症状ごとの疾患候補データ
-├── scales.py … 意識レベル(JCS/GCS)・褥瘡評価(NPUAP/DESIGN-R®)・MMT(徒手筋力検査)・血圧の変換ロジック
-├── app.py … Streamlitによる画面
-└── tests/
-├── test_models.py … モデル・ロジックの基本テスト
-├── test_data_fever.py … 発熱データのテスト
-├── test_data_fatigue.py … 倦怠感データのテスト
-├── test_data_dyspnea.py … 呼吸苦データのテスト
-├── test_data_abdominal_pain.py … 疼痛(腹痛)データのテスト
-├── test_data_vomiting_diarrhea.py … 嘔吐・下痢データのテスト
-├── test_data_skin_trouble.py … 皮膚トラブルデータのテスト
-├── test_data_dizziness.py … めまいデータのテスト
-├── test_data_chest_pain.py … 胸痛データのテスト
-├── test_data_headache.py … 頭痛データのテスト
-├── test_data_edema.py … 浮腫データのテスト
-├── test_data_urinary_trouble.py … 排尿トラブルデータのテスト
-└── test_scales.py … JCS/GCS・NPUAP/DESIGN-R®・MMT・血圧のテスト
-
----
+    ├── models.py   … 中核データモデル(Symptom / RiskCondition / EscalationRule)とロジック(Pydantic)
+    ├── data.py     … 症状ごとの疾患候補データ
+    ├── scales.py   … 意識レベル(JCS/GCS)・褥瘡評価(NPUAP/DESIGN-R®)・MMT(徒手筋力検査)・血圧の変換ロジック
+    ├── app.py      … Streamlitによる画面
+    └── tests/
+        ├── test_models.py                     … モデル・ロジックの基本テスト
+        ├── test_data_fever.py                  … 発熱データのテスト
+        ├── test_data_fatigue.py                … 倦怠感データのテスト
+        ├── test_data_dyspnea.py                … 呼吸苦データのテスト
+        ├── test_data_abdominal_pain.py         … 疼痛(腹痛)データのテスト
+        ├── test_data_vomiting_diarrhea.py       … 嘔吐・下痢データのテスト
+        ├── test_data_skin_trouble.py            … 皮膚トラブルデータのテスト
+        ├── test_data_dizziness.py               … めまいデータのテスト
+        ├── test_data_chest_pain.py              … 胸痛データのテスト
+        ├── test_data_headache.py                … 頭痛データのテスト
+        ├── test_data_edema.py                   … 浮腫データのテスト
+        ├── test_data_urinary_trouble.py         … 排尿トラブルデータのテスト
+        └── test_scales.py                       … JCS/GCS・NPUAP/DESIGN-R®・MMT・血圧のテスト
+```
 
 ## 5. Design Documents Index(設計書一覧)
 
