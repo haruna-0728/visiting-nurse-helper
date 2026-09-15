@@ -178,15 +178,14 @@ streamlit run visiting_nurse_helper/app.py
 
 ## 10. Screen Captures(画面キャプチャ)
 
-
 ### 所見入力(検索絞り込み)・判定結果
 
 観察した所見を検索欄で絞り込みながら入力し、判定結果を緊急度別(🔴直ちに受診・🟡医師へ報告・⚪経過観察)にグルーピングして表示する画面です。
 
-![所見入力・判定結果](images/pain1.png)
+![所見入力・判定結果](docs/images/pain1.png)
 
 ### 専用スケール入力(意識レベル・MMT・血圧など)
 
 経験による解釈のブレが出やすい項目(JCS/GCS、MMT評価、血圧など)を、専用の入力スケールで統一的に評価できる画面です。
 
-![専用スケール入力](images/pain2.png)
+![専用スケール入力](docs/images/pain2.png)
